@@ -5,7 +5,7 @@ from .models import Post
 # Both views.py and models.py are in the same directory. 
 # This means we can use . and the name of the file (without .py). 
 # Then we import the name of the model (Post).
-
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 def post_list(request):
@@ -21,3 +21,6 @@ def post_list(request):
 # We need to give them names (we will stick to 'posts' right now). :) 
 # It should look like this: {'posts': posts}. 
 # Please note that the part before : is a string; you need to wrap it with quotes: ''.
+def post_detail(request, pk):
+	post = get_object_or_404(Post, pk=pk)
+	return render(request, 'blog/post_detail.html', {'post':post})

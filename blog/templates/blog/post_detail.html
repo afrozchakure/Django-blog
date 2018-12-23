@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class= "post">
+	{% if post.published_date %}
+	<div class='date'>
+		{{post.published_date}}
+	</div>
+	{% endif %}
+	<h2>{{ post.title }}</h2>
+	<p>{{post.text|linebreaksbr }}</p>
+</div>
+{% endblock %}
+
+<!--{% if ... %} ... {% endif %} is a template tag we can use when we want to check something. In this scenario we want to check if a post's published_date is not empty.
+-->
