@@ -8,21 +8,22 @@ Django School Screenshot
 
 
 
+
 # Running the project locally 
 First, clone the repository to your local machine:
 
-git clone https://github.com/sibtc/my-first-blog.git
+```git clone https://github.com/sibtc/my-first-blog.git```
 
 Install the requirements:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 Create the database:
 
-python manage.py migrate
+```python manage.py migrate```
 
 Finally, run the development server:
 
-python manage.py runserver
+```python manage.py runserver```
 
 The project will be available at **127.0.0.1:8000**.
