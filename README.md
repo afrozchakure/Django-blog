@@ -2,9 +2,9 @@
 
 
 
-This is an example project to illustrate an implementation of multiple user types. In this Django app, teachers can create quizzes and students can sign up and take quizzes related to their interests.
+This is an example project to create a blog post using Django and python. In this Django app, a user can login into his account and can create and publish a blog.
 
-Django School Screenshot
+Django Blog Screenshot
 
 
 
@@ -12,7 +12,11 @@ Django School Screenshot
 # Running the project locally 
 First, clone the repository to your local machine:
 
-```git clone https://github.com/sibtc/my-first-blog.git```
+```git clone https://github.com/afrozchakure/my-first-blog.git```
+
+Change the directory to my-first-blog:
+
+```cd my-first-blog```
 
 Install the requirements:
 
