@@ -1,4 +1,4 @@
-# my-first-blog
+# Django-blog
 
 
 
@@ -12,11 +12,11 @@ Django Blog Screenshot
 # Running the project locally 
 First, clone the repository to your local machine:
 
-```git clone https://github.com/afrozchakure/my-first-blog.git```
+```git clone https://github.com/afrozchakure/Django-blog.git```
 
-Change the directory to my-first-blog:
+Change the directory to Django-blog:
 
-```cd my-first-blog```
+```cd Django-blog```
 
 Install the requirements:
 
