@@ -3,6 +3,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+path('post/about/', views.about, name='about'),
 path('', views.post_list, name='post_list'),  
 # we're now assigning a view called post_list to the root URL
 # The last part, name='post_list', is the name of the URL that 
@@ -14,4 +15,5 @@ path('post/<int:pk>/', views.post_detail, name='post_detail'),
 # / – then we need a / again before finishing the URL.
 path('post/new/', views.post_new, name='post_new'),
 path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
+# path('post/about/', views.about, name='about'),
 ]
